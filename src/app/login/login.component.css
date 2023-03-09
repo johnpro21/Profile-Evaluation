@@ -1,0 +1,47 @@
+.left {
+
+    position: absolute;
+    width: 60%;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(180deg, #B3B3B3 0%, #0D0D0D 74.48%, #000000 100%);
+}
+
+.right {
+    position: absolute;
+    width: 40%;
+    height: 100vh;
+    right: 0px;
+    top: 0px;
+    background: #F5F5F5;
+}
+
+.login__title {
+    margin-left: 150px;
+    margin-top: 200px;
+    font-size: 4.75rem;
+    line-height: 120%;
+    color: #ffffff;
+    margin-bottom: 1.25rem;
+  }
+
+  .login{
+    margin-left: 130px;
+    margin-top: 250px;
+  }
+
+  .login-btn{
+    width: 240px;
+    height: 45px;
+    display: flex;
+    background: #171516;
+    border-radius: 18px;
+  }
+  .login-btn >.txt{
+    color: #ffffff;
+    align-self: center;
+  }
+  .login-btn > img{
+    align-self: center;
+  }

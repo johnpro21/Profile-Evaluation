@@ -1,0 +1,64 @@
+
+.header {
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000000;
+    transition: 0.4s;
+  }
+  
+  .container {
+    max-width: 1200px;  
+  }
+  
+
+.nav {
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    width: 100%;
+    margin-left: 100px;
+  
+  }
+
+  .nav> img{
+    padding: 5px;
+  }
+
+  input[type=search] {
+    
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 15px 15px 15px 15px;
+  }
+  .Searchbutton {
+    display: inline-block;
+    background:#fff;
+    color: #191919;
+    padding: 12px 20px;
+    font: weight 400px;;
+    transition: 0.3s;
+    cursor: pointer;
+    }
+
+  .home__search {
+    align-self:center;
+    background-color: transparent;
+    width: 350px;
+    margin-left: 20px;
+    padding: 0rem 0.35rem 0.35rem 0.75rem;
+    padding: 0px;
+    border-radius: 15px 15px 15px 15px;
+    align-items: center;
+
+  }
+
+  .profile{
+    display:flex;
+    float: right;
+    margin-right: 10px;
+  }
