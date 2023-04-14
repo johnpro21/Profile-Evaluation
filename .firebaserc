@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "profileeval-a1a0e": {
+      "hosting": {
+        "profile_evaluation": [
+          "profileeval-a1a0e"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "profileeval-a1a0e"
+  }
+}

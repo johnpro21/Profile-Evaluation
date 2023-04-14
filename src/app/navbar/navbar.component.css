@@ -1,5 +1,6 @@
 
 .header {
+  display: inline-flex;
     height: 60px;
     position: fixed;
     top: 0;
@@ -12,7 +13,22 @@
   .container {
     max-width: 1200px;  
   }
-  
+  .login_profile{
+    padding: 6px 10px;
+    margin: 10px;
+    background-color: aliceblue;
+    color: white;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  .btn{
+    text-decoration: none;
+    color: black;
+    height:40px ;
+    text-align: center;    
+  }
 
 .nav {
     display: flex;
@@ -61,4 +77,146 @@
     display:flex;
     float: right;
     margin-right: 10px;
+  }
+
+  .profile-dropdown {
+    display: inline-block;
+    position: relative;
+    background: #000000;
+    margin: auto;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 3px;
+    -webkit-user-select: none;
+    /* Chrome all / Safari all */
+    -moz-user-select: none;
+    /* Firefox all */
+    -ms-user-select: none;
+    /* IE 10+ */
+    user-select: none;
+    /* Likely future */
+  }
+  .profile-dropdown * {
+    -webkit-user-select: none;
+    /* Chrome all / Safari all */
+    -moz-user-select: none;
+    /* Firefox all */
+    -ms-user-select: none;
+    /* IE 10+ */
+    user-select: none;
+    /* Likely future */
+  }
+  .profile-dropdown input[type=checkbox] {
+    display: none;
+  }
+  .profile-dropdown input[type=checkbox]:checked ~ ul {
+    display: block;
+    animation: pulse 0.5s;
+  }
+  .profile-dropdown input[type=checkbox]:checked ~ img {
+    background: orange;
+  }
+  .profile-dropdown input[type=checkbox]:checked ~ label {
+    background: orange;
+  }
+  .profile-dropdown input[type=checkbox]:checked ~ label i {
+    color: #f2f2f2;
+  }
+  .profile-dropdown input[type=checkbox]:checked ~ label:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: calc(50% - 10px);
+    display: block;
+    border-style: solid;
+    border-width: 7px 10px 0 10px;
+    border-color: orange transparent transparent transparent;
+    width: 0;
+    height: 0;
+  }
+  .profile-dropdown img {
+    display: inline-block;
+    width:2rem;
+    vertical-align: middle;
+    margin-right: 1rem;
+    margin: 3px;
+    border-radius: 50%;
+  }
+  .profile-dropdown span {
+    display: inline-block;
+    vertical-align: sub;
+    width: 125px;
+    margin-right: 2rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color:black;
+    font-size:1rem;
+  }
+  .profile-dropdown ul {
+    display: none;
+    list-style: none;
+    padding: 0;
+    marrgin: 0;
+    background: #000000;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    border-radius: 3px;
+  }
+  .profile-dropdown ul li a {
+    display: block;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    color: #737373;
+    font-size: 1rem;
+  }
+  .profile-dropdown ul li a i {
+    font-size: 1.3rem;
+    vertical-align: middle;
+    margin: 0 0.75rem 0 -0.25rem;
+  }
+  .profile-dropdown ul li a:hover {
+    
+  }
+  .profile-dropdown ul li:first-child a:hover {
+    border-radius: 3px 3px 0 0;
+  }
+  .profile-dropdown ul li:last-child a:hover {
+    border-radius: 0 0 3px 3px;
+  }
+  .profile-dropdown > label {
+    position: relative;
+    height: 3.5rem;
+    display: block;
+    text-decoration: none;
+    background: transparent;
+    color: #333;
+    box-sizing: border-box;
+    padding: 0.9rem;
+    float: right;
+    border-radius: 0 3px 3px 0;
+  }
+  .profile-dropdown > label i {
+    color: #b2b2b2;
+    font-size: 1.75rem;
+  }
+  .profile-dropdown:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .container {
+    margin: 7px auto 7px;
+  }
+  .container .half {
+    width: 50%;
+    float: left;
+    margin-bottom: 2rem;
+  }
+  .container:after {
+    content: "";
+    display: table;
+    clear: both;
   }

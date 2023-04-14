@@ -13,7 +13,9 @@
             <br>
             Welcome 
             </p>
-            <button class="login-btn" ><img src="/assets/images/gitwhite 1.png"> <p class="txt">Login with GitHub</p></button>
+            <firebase-ui (signInSuccessWithAuthResult)="successCallback($event)" (signInFailure)="errorCallback($event)"
+                (uiShown)="uiShownCallback()" ></firebase-ui>
+                 
         </div>
     </div>
 </section>
